@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -10,44 +11,48 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+    font-family: "Prompt", sans-serif;
 }
 
 body{
-    background: linear-gradient(135deg,#6a11cb,#2575fc);
+    background: linear-gradient(135deg,#7b2ff7,#9d4edd,#c77dff);
     min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
     padding:30px;
 }
 
 .container{
-    background:white;
-    width:90%;
     max-width:900px;
+    margin:auto;
+    background:#fff;
     border-radius:25px;
     overflow:hidden;
-    box-shadow:0 15px 35px rgba(0,0,0,0.3);
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
 }
 
 .header{
-    background:linear-gradient(135deg,#8e2de2,#4a00e0);
-    color:white;
     text-align:center;
-    padding:40px;
+    padding:50px 20px;
+    background:linear-gradient(135deg,#5a189a,#7b2cbf);
+    color:white;
 }
 
-.profile-img{
-    width:180px;
-    height:180px;
+.profile{
+    width:150px;
+    height:150px;
+    background:white;
+    color:#7b2cbf;
     border-radius:50%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:70px;
+    font-weight:bold;
     border:5px solid white;
-    object-fit:cover;
-    margin-bottom:15px;
 }
 
 .header h1{
+    margin-top:20px;
     font-size:2.2rem;
 }
 
@@ -61,27 +66,26 @@ body{
 }
 
 .section{
-    margin-bottom:30px;
+    margin-bottom:25px;
 }
 
 .section h2{
-    color:#6a11cb;
+    color:#7b2cbf;
     margin-bottom:10px;
-    border-left:6px solid #6a11cb;
+    border-left:6px solid #9d4edd;
     padding-left:10px;
 }
 
 .card{
-    background:#f7f4ff;
-    padding:15px;
+    background:#f8f0ff;
+    padding:18px;
     border-radius:15px;
-    margin-top:10px;
-    transition:0.3s;
+    transition:.3s;
 }
 
 .card:hover{
     transform:translateY(-5px);
-    box-shadow:0 10px 20px rgba(106,17,203,0.2);
+    box-shadow:0 10px 20px rgba(123,44,191,.2);
 }
 
 ul{
@@ -95,8 +99,8 @@ li{
 .footer{
     text-align:center;
     padding:20px;
-    background:#f3f3f3;
-    color:#555;
+    background:#f2f2f2;
+    color:#666;
 }
 </style>
 </head>
@@ -106,7 +110,7 @@ li{
 <div class="container">
 
     <div class="header">
-        <img src="myphoto.jpg" alt="รูปภาพของฉัน" class="profile-img">
+        <div class="profile">N</div>
 
         <h1>นายนนทวิชญ์ กลิ่นขจร</h1>
         <p>นักเรียนชั้น ม.6/1 | โรงเรียนพานทอง</p>
@@ -117,9 +121,9 @@ li{
         <div class="section">
             <h2>👤 ประวัติส่วนตัว</h2>
             <div class="card">
-                <p>ชื่อ: นายนนทวิชญ์ กลิ่นขจร</p>
-                <p>กำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6/1 โรงเรียนพานทอง</p>
-                <p>มีความสนใจด้านเทคโนโลยีและการพัฒนาเว็บไซต์</p>
+                <p>ชื่อ : นายนนทวิชญ์ กลิ่นขจร</p>
+                <p>กำลังศึกษาอยู่ระดับชั้นมัธยมศึกษาปีที่ 6/1</p>
+                <p>โรงเรียนพานทอง</p>
             </div>
         </div>
 
@@ -130,7 +134,7 @@ li{
                     <li>⚽ เล่นฟุตบอล</li>
                     <li>🎵 ฟังเพลง</li>
                     <li>🎮 เล่นเกม</li>
-                    <li>💻 ศึกษาการเขียนโปรแกรม</li>
+                    <li>💻 ศึกษาเทคโนโลยี</li>
                 </ul>
             </div>
         </div>
@@ -139,10 +143,10 @@ li{
             <h2>💡 ทักษะ</h2>
             <div class="card">
                 <ul>
-                    <li>HTML & CSS เบื้องต้น</li>
+                    <li>HTML เบื้องต้น</li>
+                    <li>CSS เบื้องต้น</li>
                     <li>Microsoft Word</li>
                     <li>Microsoft PowerPoint</li>
-                    <li>การทำงานเป็นทีม</li>
                 </ul>
             </div>
         </div>
@@ -153,7 +157,7 @@ li{
                 <ul>
                     <li>สร้างเว็บไซต์ Portfolio ด้วย HTML</li>
                     <li>เข้าร่วมกิจกรรมของโรงเรียน</li>
-                    <li>ทำโครงงานในชั้นเรียน</li>
+                    <li>ทำงานกลุ่มและโครงงานในชั้นเรียน</li>
                 </ul>
             </div>
         </div>
@@ -161,8 +165,8 @@ li{
         <div class="section">
             <h2>📞 ติดต่อ</h2>
             <div class="card">
-                <p>Email : yourmail@example.com</p>
                 <p>Facebook : Nontawit</p>
+                <p>Email : yourmail@example.com</p>
                 <p>โทรศัพท์ : 08X-XXX-XXXX</p>
             </div>
         </div>
@@ -170,10 +174,11 @@ li{
     </div>
 
     <div class="footer">
-        © 2026 Portfolio | นายนนทวิชญ์ กลิ่นขจร
+        © Portfolio 2026 | นายนนทวิชญ์ กลิ่นขจร
     </div>
 
 </div>
 
 </body>
 </html>
+```
