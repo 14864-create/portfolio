@@ -1,185 +1,255 @@
-
 <!DOCTYPE html>
 <html lang="th">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio นนทวิชญ์</title>
+
+<title>Portfolio | นนทวิชญ์ กลิ่นขจร</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: "Prompt", sans-serif;
+    font-family:'Prompt',sans-serif;
 }
 
 body{
-    background: linear-gradient(135deg,#7b2ff7,#9d4edd,#c77dff);
+    background:linear-gradient(135deg,#5a189a,#7b2cbf,#9d4edd);
     min-height:100vh;
-    padding:30px;
 }
 
-.container{
-    max-width:900px;
-    margin:auto;
-    background:#fff;
-    border-radius:25px;
-    overflow:hidden;
-    box-shadow:0 15px 40px rgba(0,0,0,0.25);
-}
-
-.header{
-    text-align:center;
-    padding:50px 20px;
-    background:linear-gradient(135deg,#5a189a,#7b2cbf);
-    color:white;
-}
-
-.profile{
-    width:150px;
-    height:150px;
-    background:white;
-    color:#7b2cbf;
-    border-radius:50%;
-    margin:auto;
+/* เมนู */
+nav{
+    width:100%;
     display:flex;
+    justify-content:space-between;
     align-items:center;
-    justify-content:center;
-    font-size:70px;
+    padding:20px 10%;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(10px);
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
     font-weight:bold;
-    border:5px solid white;
 }
 
-.header h1{
-    margin-top:20px;
-    font-size:2.2rem;
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
 }
 
-.header p{
-    margin-top:10px;
-    font-size:1.1rem;
-}
-
-.content{
-    padding:30px;
-}
-
-.section{
-    margin-bottom:25px;
-}
-
-.section h2{
-    color:#7b2cbf;
-    margin-bottom:10px;
-    border-left:6px solid #9d4edd;
-    padding-left:10px;
-}
-
-.card{
-    background:#f8f0ff;
-    padding:18px;
-    border-radius:15px;
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
     transition:.3s;
 }
 
-.card:hover{
+nav ul li a:hover{
+    color:#ffd60a;
+}
+
+/* Hero */
+.hero{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:100px 10%;
+}
+
+.box{
+    width:100%;
+    max-width:1100px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.text{
+    width:55%;
+}
+
+.text h2{
+    font-size:20px;
+}
+
+.text h1{
+    font-size:55px;
+    margin:10px 0;
+}
+
+.text p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:white;
+    color:#6a0dad;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
     transform:translateY(-5px);
-    box-shadow:0 10px 20px rgba(123,44,191,.2);
+    background:#ffd60a;
 }
 
-ul{
-    padding-left:20px;
+.photo{
+    width:280px;
+    height:280px;
+    border-radius:50%;
+    background:white;
+    color:#7b2cbf;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:120px;
+    font-weight:bold;
+    border:8px solid white;
 }
 
-li{
-    margin:8px 0;
+/* เมนูการ์ด */
+.menu{
+    width:100%;
+    padding:70px 10%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
 }
 
-.footer{
+.card{
+    background:white;
+    border-radius:20px;
     text-align:center;
-    padding:20px;
-    background:#f2f2f2;
+    padding:35px 20px;
+    transition:.3s;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#6a0dad;
+    margin:15px 0;
+}
+
+.card p{
     color:#666;
+    margin-bottom:20px;
+}
+
+.card a{
+    text-decoration:none;
+    color:white;
+    background:#7b2cbf;
+    padding:10px 25px;
+    border-radius:30px;
+}
+
+footer{
+    text-align:center;
+    color:white;
+    padding:25px;
 }
 </style>
-</head>
 
+</head>
 <body>
 
-<div class="container">
+<nav>
+    <div class="logo">Portfolio</div>
 
-    <div class="header">
-        <div class="profile">N</div>
+    <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="profile.html">ประวัติ</a></li>
+        <li><a href="education.html">การศึกษา</a></li>
+        <li><a href="award.html">ผลงาน</a></li>
+        <li><a href="contact.html">ติดต่อ</a></li>
+    </ul>
+</nav>
 
-        <h1>นายนนทวิชญ์ กลิ่นขจร</h1>
-        <p>นักเรียนชั้น ม.6/1 | โรงเรียนพานทอง</p>
-    </div>
+<section class="hero">
 
-    <div class="content">
+<div class="box">
 
-        <div class="section">
-            <h2>👤 ประวัติส่วนตัว</h2>
-            <div class="card">
-                <p>ชื่อ : นายนนทวิชญ์ กลิ่นขจร</p>
-                <p>กำลังศึกษาอยู่ระดับชั้นมัธยมศึกษาปีที่ 6/1</p>
-                <p>โรงเรียนพานทอง</p>
-            </div>
-        </div>
+<div class="text">
+<h2>ยินดีต้อนรับสู่</h2>
 
-        <div class="section">
-            <h2>🎯 งานอดิเรก</h2>
-            <div class="card">
-                <ul>
-                    <li>⚽ เล่นฟุตบอล</li>
-                    <li>🎵 ฟังเพลง</li>
-                    <li>🎮 เล่นเกม</li>
-                    <li>💻 ศึกษาเทคโนโลยี</li>
-                </ul>
-            </div>
-        </div>
+<h1>Portfolio</h1>
 
-        <div class="section">
-            <h2>💡 ทักษะ</h2>
-            <div class="card">
-                <ul>
-                    <li>HTML เบื้องต้น</li>
-                    <li>CSS เบื้องต้น</li>
-                    <li>Microsoft Word</li>
-                    <li>Microsoft PowerPoint</li>
-                </ul>
-            </div>
-        </div>
+<p>
+นายนนทวิชญ์ กลิ่นขจร<br>
+นักเรียนชั้นมัธยมศึกษาปีที่ 6/1<br>
+โรงเรียนพานทอง
+</p>
 
-        <div class="section">
-            <h2>🏆 ผลงาน</h2>
-            <div class="card">
-                <ul>
-                    <li>สร้างเว็บไซต์ Portfolio ด้วย HTML</li>
-                    <li>เข้าร่วมกิจกรรมของโรงเรียน</li>
-                    <li>ทำงานกลุ่มและโครงงานในชั้นเรียน</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>📞 ติดต่อ</h2>
-            <div class="card">
-                <p>Facebook : Nontawit</p>
-                <p>Email : nontawitklinkhajorn@gmail.com</p>
-                <p>โทรศัพท์ : 094-XXX-XXXX</p>
-                <p>instagram : civmn_</p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="footer">
-        © Portfolio 2026 | นายนนทวิชญ์ กลิ่นขจร
-    </div>
+<a href="profile.html" class="btn">เข้าสู่ Portfolio</a>
 
 </div>
 
+<div class="photo">
+N
+</div>
+
+</div>
+
+</section>
+
+<section class="menu">
+
+<div class="card">
+<h3>👤 Profile</h3>
+<p>ประวัติส่วนตัวและข้อมูลพื้นฐาน</p>
+<a href="profile.html">เปิด</a>
+</div>
+
+<div class="card">
+<h3>🎓 Education</h3>
+<p>ประวัติการศึกษา</p>
+<a href="education.html">เปิด</a>
+</div>
+
+<div class="card">
+<h3>🏆 Award</h3>
+<p>ผลงานและเกียรติบัตร</p>
+<a href="award.html">เปิด</a>
+</div>
+
+<div class="card">
+<h3>📞 Contact</h3>
+<p>ช่องทางการติดต่อ</p>
+<a href="contact.html">เปิด</a>
+</div>
+
+</section>
+
+<footer>
+© 2026 Portfolio | นายนนทวิชญ์ กลิ่นขจร
+</footer>
+
 </body>
 </html>
-```
