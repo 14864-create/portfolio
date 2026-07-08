@@ -12,19 +12,13 @@
 ========================= */
 
 body{
-    background:
-        linear-gradient(
-            rgba(15,23,42,.15),
-            rgba(15,23,42,.15)
-        ),
-        url("./image/background.jpg");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
-
-    min-height:100vh;
+    background-image: url("image/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
 }
 /* =========================
    เมนู
