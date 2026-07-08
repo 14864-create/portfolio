@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&display=swap');
 
 *{
     margin:0;
@@ -7,130 +7,134 @@
     font-family:'Prompt',sans-serif;
 }
 
-/* ===========================
-   พื้นหลัง
-=========================== */
-
 body{
     background:
-    linear-gradient(rgba(20,20,30,.70),rgba(20,20,30,.70)),
-    url("image/background.jpg");
+        linear-gradient(
+            rgba(18,25,40,.55),
+            rgba(18,25,40,.55)
+        ),
+        url("image/background.jpg");
 
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
     background-attachment:fixed;
 
     min-height:100vh;
 }
 
-/* ===========================
+/* =========================
    เมนู
-=========================== */
+========================= */
 
 nav{
     width:100%;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    padding:18px;
+    text-align:center;
     position:sticky;
     top:0;
     z-index:1000;
-
-    background:rgba(255,255,255,.10);
-    backdrop-filter:blur(12px);
-
-    padding:18px;
-    text-align:center;
-
     border-bottom:1px solid rgba(255,255,255,.15);
 }
 
 nav a{
-    color:white;
+    color:#ffffff;
     text-decoration:none;
-    margin:0 18px;
+    margin:0 15px;
     font-weight:600;
     transition:.3s;
 }
 
 nav a:hover{
-    color:#ff69b4;
+    color:#f8b4d9;
+    text-shadow:0 0 10px #f8b4d9;
 }
 
-/* ===========================
+/* =========================
    กล่องหลัก
-=========================== */
+========================= */
 
 .container{
     width:90%;
     max-width:1100px;
-    margin:50px auto;
+    margin:40px auto;
 }
 
 .box{
-    background:rgba(255,255,255,.12);
-
+    background:rgba(255,255,255,.18);
     backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
 
-    border-radius:30px;
+    border-radius:25px;
 
-    padding:45px;
+    padding:40px;
 
-    border:1px solid rgba(255,255,255,.2);
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.25);
 
-    box-shadow:0 15px 45px rgba(0,0,0,.35);
+    border:1px solid rgba(255,255,255,.25);
 }
 
-/* ===========================
+/* =========================
    หัวข้อ
-=========================== */
+========================= */
 
 h1{
     text-align:center;
     color:white;
-    font-size:42px;
     margin-bottom:30px;
+    font-size:42px;
+    text-shadow:0 0 20px rgba(255,255,255,.35);
 }
-
-h2{
-    color:#7b2cbf;
-}
-
-p{
-    line-height:1.8;
-}
-
-/* ===========================
-   รูปโปรไฟล์
-=========================== */
 
 .profile{
-    width:220px;
-    height:220px;
-
-    margin:25px auto;
+    width:200px;
+    height:200px;
+    margin:30px auto;
 
     border-radius:50%;
     overflow:hidden;
 
-    border:6px solid #ff69b4;
+    border:6px solid #f8b4d9;
+
+    background:white;
 
     box-shadow:
-    0 0 20px rgba(255,105,180,.5),
-    0 0 40px rgba(255,105,180,.3);
+    0 0 20px rgba(248,180,217,.45),
+    0 0 50px rgba(168,85,247,.25);
+
+    transition:.4s;
+}
+
+.profile:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 0 30px rgba(248,180,217,.75),
+    0 0 70px rgba(168,85,247,.45);
+
 }
 
 .profile img{
+
     width:100%;
     height:100%;
     object-fit:cover;
     display:block;
+
 }
 
-/* ===========================
-   การ์ด
-=========================== */
+/* =========================
+   Card
+========================= */
 
 .card{
 
-    background:white;
+    background:rgba(255,255,255,.93);
 
     border-radius:20px;
 
@@ -140,7 +144,8 @@ p{
 
     transition:.35s;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.18);
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.18);
 
 }
 
@@ -148,15 +153,24 @@ p{
 
     transform:translateY(-10px);
 
-    box-shadow:0 20px 40px rgba(0,0,0,.25);
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.28);
 
 }
 
 .card h2{
 
-    color:#7b2cbf;
+    color:#8b5cf6;
 
     margin-bottom:15px;
+
+}
+
+.card p{
+
+    line-height:1.8;
+
+    color:#444;
 
 }
 
@@ -172,9 +186,9 @@ p{
 
 }
 
-/* ===========================
+/* =========================
    ปุ่ม
-=========================== */
+========================= */
 
 .btn{
 
@@ -182,51 +196,56 @@ p{
 
     margin-top:20px;
 
-    background:linear-gradient(135deg,#ff69b4,#d63384);
+    padding:12px 32px;
 
-    color:white;
-
-    padding:12px 30px;
+    border-radius:35px;
 
     text-decoration:none;
 
-    border-radius:40px;
+    color:white;
 
-    transition:.3s;
+    font-weight:600;
+
+    background:linear-gradient(135deg,#f472b6,#c084fc);
+
+    transition:.35s;
 
 }
 
 .btn:hover{
 
-    transform:scale(1.05);
+    background:linear-gradient(135deg,#ec4899,#a855f7);
 
-    box-shadow:0 10px 25px rgba(255,105,180,.45);
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 25px rgba(192,132,252,.45);
 
 }
 
-/* ===========================
+/* =========================
    Grid
-=========================== */
+========================= */
 
 .grid{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 
     gap:25px;
 
 }
 
-/* ===========================
+/* =========================
    Timeline
-=========================== */
+========================= */
 
 .timeline{
 
-    border-left:5px solid #ff69b4;
+    border-left:5px solid #f472b6;
 
-    padding-left:20px;
+    padding-left:25px;
 
 }
 
@@ -234,17 +253,51 @@ p{
 
     margin-bottom:30px;
 
+    position:relative;
+
+}
+
+.timeline .item::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:15px;
+
+    height:15px;
+
+    border-radius:50%;
+
+    background:#c084fc;
+
+    left:-33px;
+
+    top:5px;
+
+    box-shadow:0 0 15px #c084fc;
+
 }
 
 .timeline h3{
 
-    color:#7b2cbf;
+    color:#8b5cf6;
+
+    margin-bottom:8px;
 
 }
 
-/* ===========================
+.timeline p{
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+/* =========================
    Footer
-=========================== */
+========================= */
 
 footer{
 
@@ -254,14 +307,90 @@ footer{
 
     padding:30px;
 
+    margin-top:40px;
+
     font-size:15px;
+
+    text-shadow:0 0 10px rgba(255,255,255,.25);
+
+}
+/* =========================
+   Engineering Background
+========================= */
+
+body::before{
+
+    content:"⚙ ⚙ ⚙";
+
+    position:fixed;
+
+    top:-120px;
+
+    right:-100px;
+
+    font-size:240px;
+
+    color:rgba(255,255,255,.08);
+
+    transform:rotate(0deg);
+
+    animation:gear1 45s linear infinite;
+
+    pointer-events:none;
 
 }
 
-/* ===========================
-   Responsive
-=========================== */
+body::after{
 
+    content:"⚙";
+
+    position:fixed;
+
+    bottom:-80px;
+
+    left:-60px;
+
+    font-size:280px;
+
+    color:rgba(255,255,255,.06);
+
+    animation:gear2 60s linear infinite reverse;
+
+    pointer-events:none;
+
+}
+
+@keyframes gear1{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes gear2{
+
+    from{
+
+        transform:rotate(360deg);
+
+    }
+
+    to{
+
+        transform:rotate(0deg);
+
+    }
+
+}
 @media(max-width:768px){
 
 nav a{
@@ -280,15 +409,27 @@ padding:25px;
 
 h1{
 
-font-size:32px;
+font-size:30px;
 
 }
 
 .profile{
 
-width:170px;
+width:160px;
 
-height:170px;
+height:160px;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+.card{
+
+padding:20px;
 
 }
 
