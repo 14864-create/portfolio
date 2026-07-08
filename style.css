@@ -7,13 +7,17 @@
     font-family:'Prompt',sans-serif;
 }
 
+/* =========================
+   พื้นหลัง
+========================= */
+
 body{
     background:
         linear-gradient(
-            rgba(18,25,40,.55),
-            rgba(18,25,40,.55)
+            rgba(15,23,42,.15),
+            rgba(15,23,42,.15)
         ),
-        url("image/background.jpg");
+        url("./image/background.jpg");
 
     background-size:cover;
     background-position:center;
@@ -22,26 +26,24 @@ body{
 
     min-height:100vh;
 }
-
 /* =========================
    เมนู
 ========================= */
 
 nav{
     width:100%;
-    background:rgba(255,255,255,.12);
+    background:rgba(255,255,255,.15);
     backdrop-filter:blur(12px);
     -webkit-backdrop-filter:blur(12px);
     padding:18px;
     text-align:center;
     position:sticky;
     top:0;
-    z-index:1000;
-    border-bottom:1px solid rgba(255,255,255,.15);
+    z-index:999;
 }
 
 nav a{
-    color:#ffffff;
+    color:#fff;
     text-decoration:none;
     margin:0 15px;
     font-weight:600;
@@ -49,10 +51,9 @@ nav a{
 }
 
 nav a:hover{
-    color:#f8b4d9;
-    text-shadow:0 0 10px #f8b4d9;
+    color:#66d9ff;
+    text-shadow:0 0 10px #66d9ff;
 }
-
 /* =========================
    กล่องหลัก
 ========================= */
@@ -64,18 +65,18 @@ nav a:hover{
 }
 
 .box{
-    background:rgba(255,255,255,.18);
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
 
     border-radius:25px;
 
     padding:40px;
 
-    box-shadow:
-    0 15px 35px rgba(0,0,0,.25);
-
     border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.35);
 }
 
 /* =========================
@@ -84,29 +85,39 @@ nav a:hover{
 
 h1{
     text-align:center;
-    color:white;
-    margin-bottom:30px;
+    color:#ffffff;
     font-size:42px;
-    text-shadow:0 0 20px rgba(255,255,255,.35);
+    margin-bottom:30px;
+
+    text-shadow:
+    0 0 10px rgba(255,255,255,.4);
 }
 
+/* =========================
+   โปรไฟล์
+========================= */
+
 .profile{
-    width:200px;
-    height:200px;
+
+    width:210px;
+    height:210px;
+
     margin:30px auto;
 
     border-radius:50%;
+
     overflow:hidden;
 
-    border:6px solid #f8b4d9;
+    border:5px solid #6ee7ff;
 
-    background:white;
+    background:#fff;
 
     box-shadow:
-    0 0 20px rgba(248,180,217,.45),
-    0 0 50px rgba(168,85,247,.25);
+    0 0 25px rgba(110,231,255,.5),
+    0 0 60px rgba(59,130,246,.3);
 
-    transition:.4s;
+    transition:.35s;
+
 }
 
 .profile:hover{
@@ -114,8 +125,8 @@ h1{
     transform:scale(1.05);
 
     box-shadow:
-    0 0 30px rgba(248,180,217,.75),
-    0 0 70px rgba(168,85,247,.45);
+    0 0 35px rgba(110,231,255,.8),
+    0 0 80px rgba(59,130,246,.45);
 
 }
 
@@ -127,14 +138,13 @@ h1{
     display:block;
 
 }
-
 /* =========================
    Card
 ========================= */
 
 .card{
 
-    background:rgba(255,255,255,.93);
+    background:rgba(255,255,255,.95);
 
     border-radius:20px;
 
@@ -145,7 +155,9 @@ h1{
     transition:.35s;
 
     box-shadow:
-    0 8px 20px rgba(0,0,0,.18);
+    0 10px 25px rgba(0,0,0,.18);
+
+    border:1px solid rgba(255,255,255,.5);
 
 }
 
@@ -154,23 +166,25 @@ h1{
     transform:translateY(-10px);
 
     box-shadow:
-    0 15px 35px rgba(0,0,0,.28);
+    0 20px 40px rgba(0,0,0,.30);
 
 }
 
 .card h2{
 
-    color:#8b5cf6;
+    color:#2563eb;
 
     margin-bottom:15px;
+
+    font-size:26px;
 
 }
 
 .card p{
 
-    line-height:1.8;
-
     color:#444;
+
+    line-height:1.8;
 
 }
 
@@ -196,17 +210,17 @@ h1{
 
     margin-top:20px;
 
-    padding:12px 32px;
+    padding:12px 30px;
 
-    border-radius:35px;
+    border-radius:40px;
 
     text-decoration:none;
 
     color:white;
 
-    font-weight:600;
+    font-weight:bold;
 
-    background:linear-gradient(135deg,#f472b6,#c084fc);
+    background:linear-gradient(135deg,#2563eb,#38bdf8);
 
     transition:.35s;
 
@@ -214,12 +228,11 @@ h1{
 
 .btn:hover{
 
-    background:linear-gradient(135deg,#ec4899,#a855f7);
+    transform:translateY(-5px);
 
-    transform:translateY(-3px);
+    background:linear-gradient(135deg,#1d4ed8,#0ea5e9);
 
-    box-shadow:
-    0 10px 25px rgba(192,132,252,.45);
+    box-shadow:0 10px 30px rgba(59,130,246,.5);
 
 }
 
@@ -231,7 +244,7 @@ h1{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 
     gap:25px;
 
@@ -243,9 +256,9 @@ h1{
 
 .timeline{
 
-    border-left:5px solid #f472b6;
+    border-left:5px solid #38bdf8;
 
-    padding-left:25px;
+    padding-left:20px;
 
 }
 
@@ -263,25 +276,25 @@ h1{
 
     position:absolute;
 
-    width:15px;
+    width:14px;
 
-    height:15px;
+    height:14px;
 
     border-radius:50%;
 
-    background:#c084fc;
+    background:#2563eb;
 
-    left:-33px;
+    left:-30px;
 
-    top:5px;
+    top:6px;
 
-    box-shadow:0 0 15px #c084fc;
+    box-shadow:0 0 15px rgba(37,99,235,.5);
 
 }
 
 .timeline h3{
 
-    color:#8b5cf6;
+    color:#2563eb;
 
     margin-bottom:8px;
 
@@ -290,8 +303,6 @@ h1{
 .timeline p{
 
     color:#555;
-
-    line-height:1.8;
 
 }
 
@@ -311,126 +322,70 @@ footer{
 
     font-size:15px;
 
-    text-shadow:0 0 10px rgba(255,255,255,.25);
-
 }
 /* =========================
-   Engineering Background
+   พื้นหลังวิศวะ
 ========================= */
 
 body::before{
-
-    content:"⚙ ⚙ ⚙";
-
+    content:"";
     position:fixed;
-
-    top:-120px;
-
-    right:-100px;
-
-    font-size:240px;
-
-    color:rgba(255,255,255,.08);
-
-    transform:rotate(0deg);
-
-    animation:gear1 45s linear infinite;
-
+    inset:0;
+    background-image:
+        linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+    background-size:40px 40px;
     pointer-events:none;
-
+    z-index:-2;
 }
 
 body::after{
-
     content:"⚙";
-
     position:fixed;
-
-    bottom:-80px;
-
-    left:-60px;
-
-    font-size:280px;
-
-    color:rgba(255,255,255,.06);
-
-    animation:gear2 60s linear infinite reverse;
-
+    right:40px;
+    bottom:30px;
+    font-size:220px;
+    color:rgba(255,255,255,.08);
+    animation:gear 30s linear infinite;
     pointer-events:none;
-
+    z-index:-1;
 }
 
-@keyframes gear1{
-
+@keyframes gear{
     from{
-
         transform:rotate(0deg);
-
     }
-
     to{
-
         transform:rotate(360deg);
-
     }
-
 }
 
-@keyframes gear2{
+/* =========================
+   Responsive
+========================= */
 
-    from{
-
-        transform:rotate(360deg);
-
-    }
-
-    to{
-
-        transform:rotate(0deg);
-
-    }
-
-}
 @media(max-width:768px){
 
-nav a{
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
 
-display:block;
+    .box{
+        padding:20px;
+    }
 
-margin:10px 0;
+    h1{
+        font-size:30px;
+    }
 
-}
+    .profile{
+        width:160px;
+        height:160px;
+    }
 
-.box{
-
-padding:25px;
-
-}
-
-h1{
-
-font-size:30px;
-
-}
-
-.profile{
-
-width:160px;
-
-height:160px;
-
-}
-
-.grid{
-
-grid-template-columns:1fr;
-
-}
-
-.card{
-
-padding:20px;
-
-}
+    .grid{
+        grid-template-columns:1fr;
+    }
 
 }
