@@ -12,67 +12,98 @@
 ========================= */
 
 body{
-    background-image: url("./image/ChatGPT Image Jul 8, 2026, 09_53_35 AM.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-}
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.45),
+            rgba(0,0,0,.45)
+        ),
+        url("./image/arcade-bg.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+
+    min-height:100vh;
 
 }
-}
+
 /* =========================
    เมนู
 ========================= */
 
 nav{
+
     width:100%;
-    background:rgba(255,255,255,.15);
-    backdrop-filter:blur(12px);
-    -webkit-backdrop-filter:blur(12px);
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+
     padding:18px;
+
     text-align:center;
+
     position:sticky;
     top:0;
+
     z-index:999;
+
 }
 
 nav a{
+
     color:#fff;
+
     text-decoration:none;
-    margin:0 15px;
+
+    margin:0 18px;
+
     font-weight:600;
-    transition:.3s;
+
+    transition:.35s;
+
 }
 
 nav a:hover{
-    color:#66d9ff;
-    text-shadow:0 0 10px #66d9ff;
+
+    color:#00f7ff;
+
+    text-shadow:0 0 15px #00f7ff;
+
 }
+
 /* =========================
    กล่องหลัก
 ========================= */
 
 .container{
+
     width:90%;
+
     max-width:1100px;
+
     margin:40px auto;
+
 }
 
 .box{
+
     background:rgba(255,255,255,.15);
-    backdrop-filter:blur(16px);
-    -webkit-backdrop-filter:blur(16px);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
 
     border-radius:25px;
 
     padding:40px;
 
-    border:1px solid rgba(255,255,255,.25);
+    border:1px solid rgba(255,255,255,.2);
 
     box-shadow:
-    0 15px 35px rgba(0,0,0,.35);
+        0 20px 40px rgba(0,0,0,.45);
+
 }
 
 /* =========================
@@ -80,13 +111,17 @@ nav a:hover{
 ========================= */
 
 h1{
-    text-align:center;
-    color:#ffffff;
-    font-size:42px;
-    margin-bottom:30px;
 
-    text-shadow:
-    0 0 10px rgba(255,255,255,.4);
+    color:white;
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+    text-shadow:0 0 20px #00f7ff;
+
 }
 
 /* =========================
@@ -95,22 +130,23 @@ h1{
 
 .profile{
 
-    width:210px;
-    height:210px;
+    width:220px;
 
-    margin:30px auto;
+    height:220px;
+
+    margin:auto;
 
     border-radius:50%;
 
     overflow:hidden;
 
-    border:5px solid #6ee7ff;
-
-    background:#fff;
+    border:5px solid #00f7ff;
 
     box-shadow:
-    0 0 25px rgba(110,231,255,.5),
-    0 0 60px rgba(59,130,246,.3);
+
+        0 0 25px #00f7ff,
+
+        0 0 60px rgba(0,247,255,.35);
 
     transition:.35s;
 
@@ -120,20 +156,18 @@ h1{
 
     transform:scale(1.05);
 
-    box-shadow:
-    0 0 35px rgba(110,231,255,.8),
-    0 0 80px rgba(59,130,246,.45);
-
 }
 
 .profile img{
 
     width:100%;
+
     height:100%;
+
     object-fit:cover;
-    display:block;
 
 }
+
 /* =========================
    Card
 ========================= */
@@ -150,19 +184,13 @@ h1{
 
     transition:.35s;
 
-    box-shadow:
-    0 10px 25px rgba(0,0,0,.18);
-
-    border:1px solid rgba(255,255,255,.5);
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
 
 }
 
 .card:hover{
 
-    transform:translateY(-10px);
-
-    box-shadow:
-    0 20px 40px rgba(0,0,0,.30);
+    transform:translateY(-8px);
 
 }
 
@@ -171,8 +199,6 @@ h1{
     color:#2563eb;
 
     margin-bottom:15px;
-
-    font-size:26px;
 
 }
 
@@ -197,42 +223,6 @@ h1{
 }
 
 /* =========================
-   ปุ่ม
-========================= */
-
-.btn{
-
-    display:inline-block;
-
-    margin-top:20px;
-
-    padding:12px 30px;
-
-    border-radius:40px;
-
-    text-decoration:none;
-
-    color:white;
-
-    font-weight:bold;
-
-    background:linear-gradient(135deg,#2563eb,#38bdf8);
-
-    transition:.35s;
-
-}
-
-.btn:hover{
-
-    transform:translateY(-5px);
-
-    background:linear-gradient(135deg,#1d4ed8,#0ea5e9);
-
-    box-shadow:0 10px 30px rgba(59,130,246,.5);
-
-}
-
-/* =========================
    Grid
 ========================= */
 
@@ -252,7 +242,7 @@ h1{
 
 .timeline{
 
-    border-left:5px solid #38bdf8;
+    border-left:5px solid #00d9ff;
 
     padding-left:20px;
 
@@ -260,9 +250,9 @@ h1{
 
 .timeline .item{
 
-    margin-bottom:30px;
-
     position:relative;
+
+    margin-bottom:30px;
 
 }
 
@@ -272,19 +262,17 @@ h1{
 
     position:absolute;
 
-    width:14px;
+    width:15px;
 
-    height:14px;
+    height:15px;
 
     border-radius:50%;
 
-    background:#2563eb;
+    background:#00d9ff;
 
     left:-30px;
 
-    top:6px;
-
-    box-shadow:0 0 15px rgba(37,99,235,.5);
+    top:5px;
 
 }
 
@@ -303,57 +291,49 @@ h1{
 }
 
 /* =========================
+   ปุ่ม
+========================= */
+
+.btn{
+
+    display:inline-block;
+
+    padding:12px 28px;
+
+    margin-top:20px;
+
+    text-decoration:none;
+
+    color:white;
+
+    border-radius:40px;
+
+    background:linear-gradient(135deg,#00b4ff,#007bff);
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 0 20px #00d9ff;
+
+}
+
+/* =========================
    Footer
 ========================= */
 
 footer{
 
-    text-align:center;
-
     color:white;
+
+    text-align:center;
 
     padding:30px;
 
-    margin-top:40px;
-
-    font-size:15px;
-
-}
-/* =========================
-   พื้นหลังวิศวะ
-========================= */
-
-body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-    background-image:
-        linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
-    background-size:40px 40px;
-    pointer-events:none;
-    z-index:-2;
-}
-
-body::after{
-    content:"⚙";
-    position:fixed;
-    right:40px;
-    bottom:30px;
-    font-size:220px;
-    color:rgba(255,255,255,.08);
-    animation:gear 30s linear infinite;
-    pointer-events:none;
-    z-index:-1;
-}
-
-@keyframes gear{
-    from{
-        transform:rotate(0deg);
-    }
-    to{
-        transform:rotate(360deg);
-    }
 }
 
 /* =========================
@@ -362,26 +342,38 @@ body::after{
 
 @media(max-width:768px){
 
-    nav a{
-        display:block;
-        margin:10px 0;
-    }
+nav a{
 
-    .box{
-        padding:20px;
-    }
+display:block;
 
-    h1{
-        font-size:30px;
-    }
+margin:10px 0;
 
-    .profile{
-        width:160px;
-        height:160px;
-    }
+}
 
-    .grid{
-        grid-template-columns:1fr;
-    }
+.box{
+
+padding:20px;
+
+}
+
+h1{
+
+font-size:30px;
+
+}
+
+.profile{
+
+width:160px;
+
+height:160px;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
 
 }
