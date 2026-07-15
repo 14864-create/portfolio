@@ -12,17 +12,11 @@
 ========================= */
 
 body{
-    background:
-        linear-gradient(
-            rgba(0,0,0,.45),
-            rgba(0,0,0,.45)
-        ),
-        url("./image/ChatGPT Image Jul 8, 2026, 09_53_35 AM.png");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    background-attachment:fixed;
+    background-image: url("image/ChatGPT Image Jul 8, 2026, 09_53_35 AM.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height:100vh;
 }
 
@@ -32,14 +26,14 @@ body{
 
 nav{
     width:100%;
-    background:rgba(0,0,0,.35);
-    backdrop-filter:blur(15px);
-    -webkit-backdrop-filter:blur(15px);
     padding:18px;
     text-align:center;
     position:sticky;
     top:0;
     z-index:999;
+
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(10px);
 }
 
 nav a{
@@ -51,8 +45,7 @@ nav a{
 }
 
 nav a:hover{
-    color:#00e5ff;
-    text-shadow:0 0 10px #00e5ff;
+    color:#00d9ff;
 }
 
 /* =========================
@@ -67,12 +60,15 @@ nav a:hover{
 
 .box{
     background:rgba(255,255,255,.15);
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
+    backdrop-filter:blur(15px);
+
     border-radius:25px;
+
     padding:40px;
-    border:1px solid rgba(255,255,255,.2);
-    box-shadow:0 15px 40px rgba(0,0,0,.4);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
 }
 
 /* =========================
@@ -81,14 +77,13 @@ nav a:hover{
 
 h1{
     text-align:center;
-    color:#fff;
+    color:white;
     font-size:42px;
     margin-bottom:30px;
-    text-shadow:0 0 15px #00e5ff;
 }
 
 /* =========================
-   โปรไฟล์
+   รูปโปรไฟล์
 ========================= */
 
 .profile{
@@ -97,20 +92,13 @@ h1{
     margin:30px auto;
     border-radius:50%;
     overflow:hidden;
-    border:5px solid #00e5ff;
-    box-shadow:0 0 30px rgba(0,229,255,.5);
-    transition:.35s;
-}
-
-.profile:hover{
-    transform:scale(1.05);
+    border:5px solid #00d9ff;
 }
 
 .profile img{
     width:100%;
     height:100%;
     object-fit:cover;
-    display:block;
 }
 
 /* =========================
@@ -118,16 +106,11 @@ h1{
 ========================= */
 
 .card{
-    background:rgba(255,255,255,.95);
+    background:white;
     border-radius:20px;
     padding:25px;
     margin:25px 0;
-    transition:.35s;
     box-shadow:0 10px 25px rgba(0,0,0,.2);
-}
-
-.card:hover{
-    transform:translateY(-8px);
 }
 
 .card h2{
@@ -136,7 +119,6 @@ h1{
 }
 
 .card p{
-    color:#444;
     line-height:1.8;
 }
 
@@ -163,13 +145,13 @@ h1{
 ========================= */
 
 .timeline{
-    border-left:5px solid #00c8ff;
+    border-left:5px solid #00d9ff;
     padding-left:20px;
 }
 
 .timeline .item{
-    margin-bottom:30px;
     position:relative;
+    margin-bottom:30px;
 }
 
 .timeline .item::before{
@@ -177,19 +159,10 @@ h1{
     position:absolute;
     width:14px;
     height:14px;
+    background:#00d9ff;
     border-radius:50%;
-    background:#00c8ff;
     left:-30px;
-    top:6px;
-}
-
-.timeline h3{
-    color:#2563eb;
-    margin-bottom:8px;
-}
-
-.timeline p{
-    color:#555;
+    top:5px;
 }
 
 /* =========================
@@ -199,18 +172,16 @@ h1{
 .btn{
     display:inline-block;
     margin-top:20px;
-    padding:12px 30px;
+    padding:12px 28px;
     border-radius:40px;
-    text-decoration:none;
     color:white;
-    font-weight:bold;
-    background:linear-gradient(135deg,#2563eb,#38bdf8);
-    transition:.35s;
+    text-decoration:none;
+    background:#2563eb;
+    transition:.3s;
 }
 
 .btn:hover{
-    transform:translateY(-5px);
-    box-shadow:0 10px 30px rgba(56,189,248,.5);
+    background:#1d4ed8;
 }
 
 /* =========================
@@ -221,7 +192,6 @@ footer{
     text-align:center;
     color:white;
     padding:30px;
-    margin-top:40px;
 }
 
 /* =========================
