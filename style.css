@@ -481,3 +481,55 @@ footer{
         transform:rotate(360deg);
     }
 }
+
+.gear{
+    position:fixed;
+    width:80px;
+    height:80px;
+    background:url("image/gear.png") no-repeat center;
+    background-size:contain;
+    z-index:999;
+    pointer-events:none;
+
+    animation:
+        moveAround 20s linear infinite,
+        rotateGear 3s linear infinite;
+}
+
+@keyframes rotateGear{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes moveAround{
+
+    0%{
+        top:20px;
+        left:20px;
+    }
+
+    25%{
+        top:20px;
+        left:calc(100vw - 100px);
+    }
+
+    50%{
+        top:calc(100vh - 100px);
+        left:calc(100vw - 100px);
+    }
+
+    75%{
+        top:calc(100vh - 100px);
+        left:20px;
+    }
+
+    100%{
+        top:20px;
+        left:20px;
+    }
+
+}
