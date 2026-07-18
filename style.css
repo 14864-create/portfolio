@@ -434,31 +434,3 @@ footer{
     padding-top:20px;
 }
 
-/* =========================
-   MOVING GEARS
-========================= */
-
-.gear{
-    position:fixed;
-    font-size:70px;
-    color:rgba(255,255,255,.12);
-    z-index:9999;
-    pointer-events:none;
-    user-select:none;
-    text-shadow:0 0 15px rgba(110,17,45,.6);
-}
-
-.gear1{
-    left:20px;
-    top:20px;
-}
-
-.gear2{
-    left:100px;
-    top:100px;
-}
-
-.gear3{
-    left:180px;
-    top:180px;
-}
