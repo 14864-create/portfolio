@@ -2,29 +2,28 @@
 <html lang="th">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ประวัติ | นนทวิชญ์ กลิ่นขจร</title>
+    <title>Profile | นนทวิชญ์ กลิ่นขจร</title>
 
-    <meta name="description" content="ประวัติส่วนตัวของ นนทวิชญ์ กลิ่นขจร">
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Remix Icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
+
+<!-- ===================== NAVBAR ===================== -->
 
 <header>
 
@@ -41,14 +40,22 @@
         <ul class="menu">
 
             <li><a href="index.html">หน้าแรก</a></li>
-            <li><a href="profile.html" class="active">ประวัติ</a></li>
+
+            <li><a href="profile.html" class="active">Profile</a></li>
+
             <li><a href="sop.html">SOP</a></li>
-            <li><a href="education.html">การศึกษา</a></li>
-            <li><a href="activities.html">กิจกรรม</a></li>
-            <li><a href="certificates.html">เกียรติบัตร</a></li>
-            <li><a href="projects.html">ผลงาน</a></li>
-            <li><a href="gallery.html">แกลเลอรี</a></li>
-            <li><a href="contact.html">ติดต่อ</a></li>
+
+            <li><a href="education.html">Education</a></li>
+
+            <li><a href="activities.html">Activities</a></li>
+
+            <li><a href="certificates.html">Certificates</a></li>
+
+            <li><a href="projects.html">Projects</a></li>
+
+            <li><a href="gallery.html">Gallery</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
 
         </ul>
 
@@ -57,44 +64,81 @@
 </header>
 
 <main>
-<section class="profile-hero">
 
-    <div class="profile-image">
+<!-- ===================== PAGE HEADER ===================== -->
+
+<section class="page-header">
+
+    <h1>About Me</h1>
+
+    <p>
+
+        ยินดีต้อนรับสู่หน้าประวัติส่วนตัวของผม
+        หน้านี้จะแสดงข้อมูลพื้นฐาน ความสนใจ
+        ทักษะ และเป้าหมายในการศึกษาต่อด้านวิศวกรรมศาสตร์
+
+    </p>
+
+</section>
+
+<!-- ===================== PROFILE CARD ===================== -->
+
+<section class="profile-card">
+
+    <div class="profile-photo">
 
         <img src="images/profile.jpg" alt="นนทวิชญ์ กลิ่นขจร">
 
     </div>
 
-    <div class="profile-content">
+    <div class="profile-detail">
 
-        <span class="profile-tag">
-            👋 Nice to meet you
+        <span class="badge">
+
+            Future Engineering Student
+
         </span>
 
-        <h1>นนทวิชญ์ กลิ่นขจร</h1>
+        <h2>นนทวิชญ์ กลิ่นขจร</h2>
 
-        <h2>นักเรียนชั้นมัธยมศึกษาปีที่ 6</h2>
+        <h4>นักเรียนระดับชั้นมัธยมศึกษาปีที่ 6</h4>
 
         <p>
 
-            ผู้ที่มีความสนใจด้านวิศวกรรมศาสตร์
-            เทคโนโลยี และปัญญาประดิษฐ์ (AI)
-
-            มีความมุ่งมั่นในการเรียนรู้
-            พร้อมพัฒนาทักษะผ่านกิจกรรม
-            และประสบการณ์จริงอย่างต่อเนื่อง
+            ผมมีความสนใจด้านวิศวกรรมศาสตร์ เทคโนโลยี
+            และนวัตกรรม โดยเชื่อว่าการเรียนรู้ผ่าน
+            การลงมือปฏิบัติจริงจะช่วยพัฒนาทักษะ
+            และเตรียมความพร้อมสำหรับการเป็นวิศวกรในอนาคต
 
         </p>
+
+        <div class="profile-button">
+
+            <a href="activities.html" class="btn-red">
+
+                ผลงานของผม
+
+            </a>
+
+            <a href="contact.html" class="btn-white">
+
+                ติดต่อ
+
+            </a>
+
+        </div>
 
     </div>
 
 </section>
 
-    <section class="about-profile">
+<!-- ===================== ABOUT ===================== -->
+
+<section class="about-profile">
 
     <div class="section-title">
 
-        <h2>เกี่ยวกับฉัน</h2>
+        <h2>About Me</h2>
 
     </div>
 
@@ -102,25 +146,20 @@
 
         <p>
 
-            สวัสดีครับ ผมชื่อ
-            <strong>นนทวิชญ์ กลิ่นขจร</strong>
-
-            เป็นนักเรียนที่เชื่อว่า
-            "การเรียนรู้ไม่มีวันสิ้นสุด"
-
-            ผมชื่นชอบการเรียนรู้ด้านวิศวกรรม
-            การแก้ปัญหา การออกแบบ
+            สวัสดีครับ ผมชื่อ <strong>นนทวิชญ์ กลิ่นขจร</strong>
+            ปัจจุบันกำลังศึกษาอยู่ในระดับชั้นมัธยมศึกษาปีที่ 6
+            มีความมุ่งมั่นที่จะศึกษาต่อในคณะวิศวกรรมศาสตร์
+            เพราะชื่นชอบการคิดวิเคราะห์ การแก้ไขปัญหา
             และการสร้างสรรค์นวัตกรรมใหม่ ๆ
 
         </p>
 
         <p>
 
-            ผมได้เข้าร่วมกิจกรรมต่าง ๆ
-            เช่น การอบรม AI
-            การเข้าร่วม Open House
-            และค่ายวิศวกรรม
-            เพื่อค้นหาประสบการณ์ใหม่ ๆ
+            ผมได้เข้าร่วมกิจกรรมต่าง ๆ เช่น
+            การอบรม AI การเข้าค่ายวิศวกรรม
+            และกิจกรรม Open House ของมหาวิทยาลัย
+            เพื่อเรียนรู้ประสบการณ์จริง
             และเตรียมความพร้อมสำหรับการศึกษาต่อ
 
         </p>
@@ -128,49 +167,221 @@
     </div>
 
 </section>
-    <section class="personal-info">
+<!-- ===================== PERSONAL INFORMATION ===================== -->
+
+<section class="personal-information">
 
     <div class="section-title">
 
         <h2>ข้อมูลส่วนตัว</h2>
+
+        <p>
+
+            ข้อมูลพื้นฐานและเป้าหมายของผม
+
+        </p>
 
     </div>
 
     <div class="info-grid">
 
         <div class="info-card">
+
+            <i class="ri-user-3-line"></i>
+
             <h3>ชื่อ - สกุล</h3>
+
             <p>นนทวิชญ์ กลิ่นขจร</p>
+
         </div>
 
         <div class="info-card">
+
+            <i class="ri-school-line"></i>
+
             <h3>ระดับการศึกษา</h3>
+
             <p>มัธยมศึกษาปีที่ 6</p>
+
         </div>
 
         <div class="info-card">
+
+            <i class="ri-book-open-line"></i>
+
             <h3>แผนการเรียน</h3>
+
             <p>วิทยาศาสตร์ - คณิตศาสตร์</p>
+
         </div>
 
         <div class="info-card">
+
+            <i class="ri-building-line"></i>
+
+            <h3>โรงเรียน</h3>
+
+            <p>โรงเรียนพานทอง</p>
+
+        </div>
+
+        <div class="info-card">
+
+            <i class="ri-rocket-line"></i>
+
             <h3>เป้าหมาย</h3>
-            <p>คณะวิศวกรรมศาสตร์</p>
+
+            <p>ศึกษาต่อคณะวิศวกรรมศาสตร์</p>
+
         </div>
 
         <div class="info-card">
+
+            <i class="ri-lightbulb-line"></i>
+
             <h3>ความสนใจ</h3>
-            <p>Engineering • AI • Technology</p>
-        </div>
 
-        <div class="info-card">
-            <h3>งานอดิเรก</h3>
-            <p>ถ่ายภาพ • เรียนรู้เทคโนโลยี • พัฒนาเว็บไซต์</p>
+            <p>Engineering • AI • Technology</p>
+
         </div>
 
     </div>
 
 </section>
+
+<!-- ===================== SKILLS ===================== -->
+
+<section class="skills">
+
+    <div class="section-title">
+
+        <h2>ทักษะ</h2>
+
+        <p>
+
+            ทักษะที่ได้เรียนรู้จากการศึกษาและการเข้าร่วมกิจกรรม
+
+        </p>
+
+    </div>
+
+    <div class="skill-grid">
+
+        <div class="skill-card">
+
+            <i class="ri-html5-line"></i>
+
+            <h3>HTML</h3>
+
+        </div>
+
+        <div class="skill-card">
+
+            <i class="ri-css3-line"></i>
+
+            <h3>CSS</h3>
+
+        </div>
+
+        <div class="skill-card">
+
+            <i class="ri-cpu-line"></i>
+
+            <h3>Artificial Intelligence</h3>
+
+        </div>
+
+        <div class="skill-card">
+
+            <i class="ri-camera-line"></i>
+
+            <h3>Photography</h3>
+
+        </div>
+
+        <div class="skill-card">
+
+            <i class="ri-team-line"></i>
+
+            <h3>Leadership</h3>
+
+        </div>
+
+        <div class="skill-card">
+
+            <i class="ri-group-line"></i>
+
+            <h3>Teamwork</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================== INTEREST ===================== -->
+
+<section class="interest">
+
+    <div class="section-title">
+
+        <h2>ความสนใจ</h2>
+
+    </div>
+
+    <div class="interest-box">
+
+        <div class="interest-card">
+
+            ⚙️
+
+            <h3>Engineering</h3>
+
+            <p>
+
+                สนใจการออกแบบ วิเคราะห์ และแก้ไขปัญหา
+                ด้วยหลักการทางวิศวกรรม
+
+            </p>
+
+        </div>
+
+        <div class="interest-card">
+
+            🤖
+
+            <h3>Artificial Intelligence</h3>
+
+            <p>
+
+                ศึกษาและเรียนรู้การประยุกต์ใช้ AI
+                เพื่อพัฒนานวัตกรรมในอนาคต
+
+            </p>
+
+        </div>
+
+        <div class="interest-card">
+
+            💻
+
+            <h3>Technology</h3>
+
+            <p>
+
+                ชื่นชอบเทคโนโลยีใหม่ ๆ
+                และการสร้างเว็บไซต์ด้วย HTML และ CSS
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================== MOTTO ===================== -->
+
 <section class="motto">
 
     <blockquote>
@@ -182,32 +393,72 @@
 
     <p>
 
-        "ทุกประสบการณ์ คือก้าวสำคัญ
-        สู่การเป็นวิศวกรในแบบที่ผมใฝ่ฝัน"
+        ทุกประสบการณ์ คือก้าวสำคัญ
+        ที่ทำให้ผมเข้าใกล้ความฝัน
+        ในการเป็นวิศวกร
 
     </p>
 
 </section>
 
-</main>
+    <!-- ===================== FOOTER ===================== -->
 
 <footer>
 
-    <p>
+    <div class="footer-content">
 
-        © 2026 Engineering Portfolio
+        <h3>Engineering Portfolio</h3>
 
-        <br>
+        <p>
 
-        นนทวิชญ์ กลิ่นขจร
+            ขอบคุณที่เข้ามาเยี่ยมชม Portfolio ของผม
 
-    </p>
+            หวังเป็นอย่างยิ่งว่าหน้านี้จะช่วยให้ทุกท่าน
+            ได้รู้จักตัวตน ความสามารถ และเป้าหมาย
+            ของผมมากยิ่งขึ้น
+
+        </p>
+
+        <div class="footer-social">
+
+            <a href="#">
+                <i class="ri-facebook-circle-fill"></i>
+            </a>
+
+            <a href="#">
+                <i class="ri-instagram-line"></i>
+            </a>
+
+            <a href="#">
+                <i class="ri-github-fill"></i>
+            </a>
+
+            <a href="#">
+                <i class="ri-mail-line"></i>
+            </a>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+
+            © 2026 Engineering Portfolio
+
+            <br>
+
+            Designed & Developed by
+
+            <strong>นนทวิชญ์ กลิ่นขจร</strong>
+
+        </p>
+
+    </div>
 
 </footer>
+
+</main>
 
 </body>
 
 </html>
-    
-
-    
