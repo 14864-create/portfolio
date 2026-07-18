@@ -433,3 +433,51 @@ footer{
     border-top:1px solid rgba(255,255,255,.1);
     padding-top:20px;
 }
+/* ===== Gear Animation ===== */
+
+.gear{
+    position:fixed;
+    font-size:80px;
+    color:rgba(255,255,255,.08);
+    z-index:-1;
+    user-select:none;
+    animation:spin 10s linear infinite;
+}
+
+.gear1{
+    top:40px;
+    left:40px;
+}
+
+.gear2{
+    top:120px;
+    right:50px;
+    animation-duration:15s;
+}
+
+.gear3{
+    bottom:60px;
+    left:80px;
+    animation-duration:18s;
+}
+
+.gear4{
+    bottom:80px;
+    right:60px;
+    animation-duration:12s;
+}
+
+.gear5{
+    top:45%;
+    right:20px;
+    animation-duration:20s;
+}
+
+@keyframes spin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
